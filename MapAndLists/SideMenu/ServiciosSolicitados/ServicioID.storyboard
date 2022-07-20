@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HZ3-pO-B0D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HurmeGeometricSans3 SemiBoldOblique.otf">
+            <string>HurmeGeometricSans3-SemiBoldObl</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ServiciosID View Controller-->
+        <scene sceneID="RPg-SS-Iqx">
+            <objects>
+                <viewController id="HZ3-pO-B0D" customClass="ServiciosIDViewController" customModule="MapAndLists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALm-Br-rwx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oba-ET-ggv">
+                                <rect key="frame" x="17" y="70" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="blL-tE-63O"/>
+                                    <constraint firstAttribute="width" constant="40" id="cEz-zd-bhq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="ctv-Hb-eyz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-1e-1ov">
+                                <rect key="frame" x="23" y="76" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="A7I-Mf-Mr3"/>
+                                    <constraint firstAttribute="width" constant="28" id="DDw-ET-xnX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio ID R78946" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZU-Lb-yTg">
+                                <rect key="frame" x="119.5" y="76" width="175.5" height="28"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="20"/>
+                                <color key="textColor" name="AzulOscuro"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-KN-U5S">
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiX-Rr-jYq">
+                                        <rect key="frame" x="0.0" y="30" width="414" height="1296"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w8q-rj-pmt">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="1296"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auz-uj-5Wc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="51"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="25S-YY-55l">
+                                                                <rect key="frame" x="16" y="0.0" width="366" height="51"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hHZ-sR-gxa">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="51"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XZ-pd-2DP">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="31"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COB-wz-Dh8">
+                                                                                        <rect key="frame" x="28.5" y="8" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="15" id="jmL-uu-IqB"/>
+                                                                                            <constraint firstAttribute="width" constant="15" id="nTj-qZ-XZW"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="COB-wz-Dh8" firstAttribute="top" secondItem="7XZ-pd-2DP" secondAttribute="top" constant="8" id="3mh-Oq-tUY"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="COB-wz-Dh8" secondAttribute="bottom" constant="8" id="EXV-b0-yKX"/>
+                                                                                    <constraint firstItem="COB-wz-Dh8" firstAttribute="centerY" secondItem="7XZ-pd-2DP" secondAttribute="centerY" id="GHq-KZ-YUt"/>
+                                                                                    <constraint firstItem="COB-wz-Dh8" firstAttribute="centerX" secondItem="7XZ-pd-2DP" secondAttribute="centerX" id="kw7-za-IZi"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Inicio de servicio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XZ-C0-D9J">
+                                                                                <rect key="frame" x="0.0" y="31" width="72.5" height="20"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="10"/>
+                                                                                <color key="textColor" name="NaranjaFx"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w74-Pt-vsL">
+                                                                        <rect key="frame" x="73.5" y="0.0" width="72.5" height="51"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-HX-anU">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="31"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Na-1S-XrD">
+                                                                                        <rect key="frame" x="28.5" y="8" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="15" id="GRe-Vh-saX"/>
+                                                                                            <constraint firstAttribute="height" constant="15" id="RPz-5c-E4r"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="7Na-1S-XrD" firstAttribute="centerY" secondItem="WTd-HX-anU" secondAttribute="centerY" id="8dW-9D-hKM"/>
+                                                                                    <constraint firstItem="7Na-1S-XrD" firstAttribute="centerX" secondItem="WTd-HX-anU" secondAttribute="centerX" id="N0P-Jo-RZ6"/>
+                                                                                    <constraint firstItem="7Na-1S-XrD" firstAttribute="top" secondItem="WTd-HX-anU" secondAttribute="top" constant="8" id="Nql-tD-X5N"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="7Na-1S-XrD" secondAttribute="bottom" constant="8" id="gdN-QY-uvV"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxZ-NM-cgw">
+                                                                                <rect key="frame" x="0.0" y="36" width="72.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="10"/>
+                                                                                <color key="textColor" name="NaranjaFx"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1bw-KG-1pC">
+                                                                        <rect key="frame" x="147" y="0.0" width="72" height="51"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-fF-9bA">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="31"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77n-SO-1oF">
+                                                                                        <rect key="frame" x="28.5" y="8" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="15" id="3LZ-rh-ttI"/>
+                                                                                            <constraint firstAttribute="height" constant="15" id="qGZ-b0-Yft"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="77n-SO-1oF" firstAttribute="centerY" secondItem="eYT-fF-9bA" secondAttribute="centerY" id="7Ht-UA-HkO"/>
+                                                                                    <constraint firstItem="77n-SO-1oF" firstAttribute="centerX" secondItem="eYT-fF-9bA" secondAttribute="centerX" id="QQa-p4-Ih6"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="77n-SO-1oF" secondAttribute="bottom" constant="8" id="eZY-lA-Z2b"/>
+                                                                                    <constraint firstItem="77n-SO-1oF" firstAttribute="top" secondItem="eYT-fF-9bA" secondAttribute="top" constant="8" id="rQD-Q6-Pwy"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En ruta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GY7-Ni-MHz">
+                                                                                <rect key="frame" x="0.0" y="36" width="72" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="10"/>
+                                                                                <color key="textColor" name="NaranjaFx"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UEE-el-PNI">
+                                                                        <rect key="frame" x="220" y="0.0" width="72.5" height="51"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-Yq-Z2k">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="31"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="whP-Fw-ohc">
+                                                                                        <rect key="frame" x="29" y="8" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="15" id="buk-9C-cgQ"/>
+                                                                                            <constraint firstAttribute="height" constant="15" id="edz-Gl-rT5"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="bottom" secondItem="whP-Fw-ohc" secondAttribute="bottom" constant="8" id="Irs-7w-ozM"/>
+                                                                                    <constraint firstItem="whP-Fw-ohc" firstAttribute="top" secondItem="6a5-Yq-Z2k" secondAttribute="top" constant="8" id="L1j-XQ-Wcw"/>
+                                                                                    <constraint firstItem="whP-Fw-ohc" firstAttribute="centerY" secondItem="6a5-Yq-Z2k" secondAttribute="centerY" id="T3Y-Dq-v8M"/>
+                                                                                    <constraint firstItem="whP-Fw-ohc" firstAttribute="centerX" secondItem="6a5-Yq-Z2k" secondAttribute="centerX" id="Wpi-jI-gPh"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descargue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6H-CG-hAl">
+                                                                                <rect key="frame" x="0.0" y="36" width="72.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="10"/>
+                                                                                <color key="textColor" name="NaranjaFx"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SN9-qd-kal">
+                                                                        <rect key="frame" x="293.5" y="0.0" width="72.5" height="51"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNV-VD-PVr">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="31"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v0l-Ye-zud">
+                                                                                        <rect key="frame" x="29" y="8" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="15" id="73N-uf-1yv"/>
+                                                                                            <constraint firstAttribute="width" constant="15" id="qbQ-Xd-kzc"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="v0l-Ye-zud" firstAttribute="top" secondItem="bNV-VD-PVr" secondAttribute="top" constant="8" id="5c2-Ay-ne1"/>
+                                                                                    <constraint firstItem="v0l-Ye-zud" firstAttribute="centerX" secondItem="bNV-VD-PVr" secondAttribute="centerX" id="Hge-KH-ciE"/>
+                                                                                    <constraint firstItem="v0l-Ye-zud" firstAttribute="centerY" secondItem="bNV-VD-PVr" secondAttribute="centerY" id="JV2-kO-iyM"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="v0l-Ye-zud" secondAttribute="bottom" constant="8" id="MnN-6A-Z31"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fin de servicio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxM-7K-SA8">
+                                                                                <rect key="frame" x="0.0" y="36" width="72.5" height="15"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="10"/>
+                                                                                <color key="textColor" name="NaranjaFx"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="25S-YY-55l" secondAttribute="bottom" id="3HE-BS-46M"/>
+                                                            <constraint firstAttribute="trailing" secondItem="25S-YY-55l" secondAttribute="trailing" constant="16" id="7YZ-HP-rMD"/>
+                                                            <constraint firstItem="25S-YY-55l" firstAttribute="leading" secondItem="auz-uj-5Wc" secondAttribute="leading" constant="16" id="gZo-Ny-YEe"/>
+                                                            <constraint firstItem="25S-YY-55l" firstAttribute="top" secondItem="auz-uj-5Wc" secondAttribute="top" id="xcg-cB-yVC"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-k8-ilL">
+                                                        <rect key="frame" x="0.0" y="56" width="398" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-sg-cQK">
+                                                                <rect key="frame" x="24" y="13" width="58.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15p-ad-Rgi">
+                                                                <rect key="frame" x="6.5" y="9" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="VQj-vc-fyX"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="ServicioButtonAction:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="x4h-hZ-4eQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_more_up" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-fJ-aJy">
+                                                                <rect key="frame" x="350" y="8" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="U5d-Nm-fju"/>
+                                                                    <constraint firstAttribute="height" constant="32" id="zaX-4K-2Oc"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="gvf-fJ-aJy" firstAttribute="centerY" secondItem="cLI-k8-ilL" secondAttribute="centerY" id="6o8-G0-g1l"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7Zg-sg-cQK" secondAttribute="bottom" constant="14" id="8ZE-BL-ifk"/>
+                                                            <constraint firstItem="15p-ad-Rgi" firstAttribute="centerX" secondItem="cLI-k8-ilL" secondAttribute="centerX" id="GT1-ik-ItP"/>
+                                                            <constraint firstItem="7Zg-sg-cQK" firstAttribute="leading" secondItem="cLI-k8-ilL" secondAttribute="leading" constant="24" id="Yn7-Wk-qpd"/>
+                                                            <constraint firstItem="7Zg-sg-cQK" firstAttribute="top" secondItem="cLI-k8-ilL" secondAttribute="top" constant="13" id="cgO-D6-bhl"/>
+                                                            <constraint firstItem="15p-ad-Rgi" firstAttribute="centerY" secondItem="cLI-k8-ilL" secondAttribute="centerY" id="dDz-hE-K7t"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gvf-fJ-aJy" secondAttribute="trailing" constant="16" id="luX-Q9-pEh"/>
+                                                            <constraint firstAttribute="height" constant="48" id="w82-wp-Its"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1U-WC-bCi">
+                                                        <rect key="frame" x="0.0" y="109" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="YNM-2V-FeY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xk-KH-zUo">
+                                                        <rect key="frame" x="0.0" y="115" width="398" height="141.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="gZN-uC-jcj">
+                                                                <rect key="frame" x="24" y="8" width="366" height="133.5"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kjJ-QT-1tz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaV-oA-hsH">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="120" id="9x9-Fs-7QI"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio solicitado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdF-zU-Rbw">
+                                                                                <rect key="frame" x="123" y="0.0" width="243" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="14" id="Siw-2m-fKa"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="u2i-pr-jfd">
+                                                                        <rect key="frame" x="0.0" y="25" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id del Booking:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHP-rk-pxQ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="120" id="ubA-kv-6yg"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="280" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCr-Qd-poU">
+                                                                                <rect key="frame" x="123" y="0.0" width="243" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="14" id="cgp-vN-xnq"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GpY-Sm-jUb">
+                                                                        <rect key="frame" x="0.0" y="50" width="366" height="19.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Fecha de creación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdw-0B-Tpi">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="126" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-10-10 04:59:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgH-aO-1cm">
+                                                                                <rect key="frame" x="129" y="0.0" width="237" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8MQ-T3-EAI">
+                                                                        <rect key="frame" x="0.0" y="80.5" width="366" height="28"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-JO-Yph">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="28"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="120" id="Es5-3S-7zW"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Bogotá - Ibagué Bogotá - Ibagué Bogotá - Ibagué" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9f-5P-mlX">
+                                                                                <rect key="frame" x="123" y="0.0" width="243" height="28"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-iG-inb">
+                                                                        <rect key="frame" x="0.0" y="119.5" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x34-lF-Me6">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="120" id="zQg-Xa-uV1"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tubos de acero" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oi-R4-UAi">
+                                                                                <rect key="frame" x="123" y="0.0" width="243" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="gZN-uC-jcj" secondAttribute="trailing" constant="8" id="azF-kT-jea"/>
+                                                            <constraint firstItem="gZN-uC-jcj" firstAttribute="leading" secondItem="5Xk-KH-zUo" secondAttribute="leading" constant="24" id="ckh-Hs-PKX"/>
+                                                            <constraint firstItem="gZN-uC-jcj" firstAttribute="top" secondItem="5Xk-KH-zUo" secondAttribute="top" constant="8" id="dmB-dj-AZU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gZN-uC-jcj" secondAttribute="bottom" id="yOv-df-dfy"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-87-Udc">
+                                                        <rect key="frame" x="0.0" y="261.5" width="398" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv9-iV-uFq">
+                                                                <rect key="frame" x="24" y="13" width="152.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl1-z9-CV5">
+                                                                <rect key="frame" x="6.5" y="9" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="pbN-X8-OIo"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="InfoServButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="AiG-vH-FTF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_more_up" translatesAutoresizingMaskIntoConstraints="NO" id="cwi-aJ-7tu">
+                                                                <rect key="frame" x="350" y="8" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="PyM-QZ-yTF"/>
+                                                                    <constraint firstAttribute="width" constant="32" id="ouL-8j-HYH"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cwi-aJ-7tu" firstAttribute="centerY" secondItem="fJ2-87-Udc" secondAttribute="centerY" id="80B-vQ-tcT"/>
+                                                            <constraint firstItem="vl1-z9-CV5" firstAttribute="centerY" secondItem="fJ2-87-Udc" secondAttribute="centerY" id="Reb-D6-rkb"/>
+                                                            <constraint firstItem="vl1-z9-CV5" firstAttribute="centerX" secondItem="fJ2-87-Udc" secondAttribute="centerX" id="SEw-5m-2tv"/>
+                                                            <constraint firstItem="nv9-iV-uFq" firstAttribute="top" secondItem="fJ2-87-Udc" secondAttribute="top" constant="13" id="SZQ-8G-8CA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cwi-aJ-7tu" secondAttribute="trailing" constant="16" id="Y5S-5g-KcP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nv9-iV-uFq" secondAttribute="bottom" constant="14" id="bNO-Dx-IKR"/>
+                                                            <constraint firstItem="nv9-iV-uFq" firstAttribute="leading" secondItem="fJ2-87-Udc" secondAttribute="leading" constant="24" id="xZz-0x-Qc9"/>
+                                                            <constraint firstAttribute="height" constant="48" id="zV2-ns-gli"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mm8-b5-cWw">
+                                                        <rect key="frame" x="0.0" y="314.5" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="NYx-FP-ONw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3J-Ys-vbq">
+                                                        <rect key="frame" x="0.0" y="320.5" width="398" height="79.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Sd-Pe-FDq">
+                                                                <rect key="frame" x="24" y="4" width="366" height="71.5"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="34d-m2-M40">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Tipo negociación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD6-kt-zSK">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="xzD-xx-8RD"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Tipo negociación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBC-Qh-gZi">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="mSS-p3-pOU">
+                                                                        <rect key="frame" x="0.0" y="25" width="366" height="21.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Vehículo solicitado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3J-pP-WFW">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="21.5"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3s3 - Estacas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm1-NX-LIm">
+                                                                                <rect key="frame" x="128.5" y="0.0" width="237.5" height="21.5"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="f9P-H0-OPc">
+                                                                        <rect key="frame" x="0.0" y="57.5" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restricciones:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="064-kB-04a">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="4i1-Zt-gc6"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ninguna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-rj-eom">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="6Sd-Pe-FDq" firstAttribute="top" secondItem="K3J-Ys-vbq" secondAttribute="top" constant="4" id="KUV-gG-sgf"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6Sd-Pe-FDq" secondAttribute="trailing" constant="8" id="KWD-js-Mh1"/>
+                                                            <constraint firstItem="6Sd-Pe-FDq" firstAttribute="leading" secondItem="K3J-Ys-vbq" secondAttribute="leading" constant="24" id="gYh-EW-gZr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="6Sd-Pe-FDq" secondAttribute="bottom" constant="4" id="ptB-oV-mu2"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-GC-BNP">
+                                                        <rect key="frame" x="0.0" y="405" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="kDW-jb-2uY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMB-t6-Oim">
+                                                        <rect key="frame" x="0.0" y="411" width="398" height="46"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resumen servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-Qo-XVJ">
+                                                                <rect key="frame" x="24" y="13" width="129.5" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="WgS-Si-1wb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoG-P8-EuJ">
+                                                                <rect key="frame" x="6.5" y="8" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="xrJ-cp-PTl"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="ResumServButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="VVv-oD-ltc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_more_up" translatesAutoresizingMaskIntoConstraints="NO" id="j77-UT-z6w">
+                                                                <rect key="frame" x="350" y="7" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="YeJ-ux-uPU"/>
+                                                                    <constraint firstAttribute="width" constant="32" id="dCu-b2-edp"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="JoG-P8-EuJ" firstAttribute="centerY" secondItem="mMB-t6-Oim" secondAttribute="centerY" id="5Gb-9p-V2j"/>
+                                                            <constraint firstItem="ff5-Qo-XVJ" firstAttribute="top" secondItem="mMB-t6-Oim" secondAttribute="top" constant="13" id="6SK-n4-oy4"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ff5-Qo-XVJ" secondAttribute="bottom" constant="13" id="QL6-99-FbU"/>
+                                                            <constraint firstItem="JoG-P8-EuJ" firstAttribute="centerX" secondItem="mMB-t6-Oim" secondAttribute="centerX" id="a7x-ma-FZM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="j77-UT-z6w" secondAttribute="trailing" constant="16" id="bEm-Ui-Qd0"/>
+                                                            <constraint firstItem="ff5-Qo-XVJ" firstAttribute="leading" secondItem="mMB-t6-Oim" secondAttribute="leading" constant="24" id="cgN-7G-vmS"/>
+                                                            <constraint firstItem="j77-UT-z6w" firstAttribute="centerY" secondItem="mMB-t6-Oim" secondAttribute="centerY" id="ehP-ct-nhP"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-24-qkc">
+                                                        <rect key="frame" x="0.0" y="462" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="WXf-1r-aTK"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1J-oG-C06">
+                                                        <rect key="frame" x="0.0" y="468" width="398" height="222"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-yS-zeG">
+                                                                <rect key="frame" x="24" y="4" width="366" height="214"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-0R-BH9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Demorar conductor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-ms-nD4">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="DLg-ao-bRP"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze6-CQ-PZ0">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="2kz-Wd-EOJ">
+                                                                        <rect key="frame" x="0.0" y="25" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Fin servicio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpV-LF-rE5">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="d6r-3P-BNs"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUz-WL-BO6">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ROT-9O-NrS">
+                                                                        <rect key="frame" x="0.0" y="50" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. Espera cargue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-8q-vGM">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="hEe-Ib-3AP"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-oD-VIz">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4hT-5J-Ljd">
+                                                                        <rect key="frame" x="0.0" y="75" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. Cargue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrq-h5-ZGf">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="HOW-sH-tV9"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22q-3c-Kgr">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0At-0t-alV">
+                                                                        <rect key="frame" x="0.0" y="100" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. Espera descargue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEt-q8-7mS">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="WjR-Ys-VT2"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-Ng-vsU">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zVi-RK-csq">
+                                                                        <rect key="frame" x="0.0" y="125" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. descargue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QB-ge-SCc">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="IdF-le-zqh"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No registra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-Sz-RI9">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-8t-m3y">
+                                                                        <rect key="frame" x="0.0" y="150" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden de carga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L28-9j-gSH">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="Wqb-UJ-lJ9"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver documento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-Ka-DLL">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" systemColor="tintColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-hm-K1V">
+                                                                        <rect key="frame" x="0.0" y="175" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manifiesto de carga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AY-aG-HBL">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="Zzo-y4-DLA"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No generado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-JF-3Z6">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Cpg-eH-C9Z">
+                                                                        <rect key="frame" x="0.0" y="200" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoja de tiempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHt-rO-Qla">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="140" id="5aY-0C-cxK"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver documento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jR-kq-2MW">
+                                                                                <rect key="frame" x="143" y="0.0" width="223" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" systemColor="tintColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="9gI-yS-zeG" secondAttribute="bottom" constant="4" id="Azd-rp-ZMg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9gI-yS-zeG" secondAttribute="trailing" constant="8" id="g9a-Eb-Tpw"/>
+                                                            <constraint firstItem="9gI-yS-zeG" firstAttribute="top" secondItem="U1J-oG-C06" secondAttribute="top" constant="4" id="vQy-lj-eQc"/>
+                                                            <constraint firstItem="9gI-yS-zeG" firstAttribute="leading" secondItem="U1J-oG-C06" secondAttribute="leading" constant="24" id="xoK-rR-sdV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9G-8Q-SKR">
+                                                        <rect key="frame" x="0.0" y="695" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="H4q-RB-eTL"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-0y-jq6">
+                                                        <rect key="frame" x="0.0" y="701" width="398" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos de conductor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnW-IB-hPs">
+                                                                <rect key="frame" x="24" y="13" width="151" height="16"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S5-TE-yBD">
+                                                                <rect key="frame" x="6.5" y="10" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="8nM-Z3-J74"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="DatosCondButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="xvU-4d-iW1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_more_up" translatesAutoresizingMaskIntoConstraints="NO" id="tfB-vh-SZW">
+                                                                <rect key="frame" x="350" y="9" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="7Dc-i9-4WL"/>
+                                                                    <constraint firstAttribute="height" constant="32" id="Mk0-Uh-f5u"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="tfB-vh-SZW" firstAttribute="centerY" secondItem="gNF-0y-jq6" secondAttribute="centerY" id="1sY-AF-VYx"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GnW-IB-hPs" secondAttribute="bottom" constant="21" id="7d6-FB-7cC"/>
+                                                            <constraint firstItem="2S5-TE-yBD" firstAttribute="centerX" secondItem="gNF-0y-jq6" secondAttribute="centerX" id="DV6-ld-BGm"/>
+                                                            <constraint firstItem="2S5-TE-yBD" firstAttribute="centerY" secondItem="gNF-0y-jq6" secondAttribute="centerY" id="O5f-Gc-lft"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tfB-vh-SZW" secondAttribute="trailing" constant="16" id="g7C-lA-k4D"/>
+                                                            <constraint firstItem="GnW-IB-hPs" firstAttribute="leading" secondItem="gNF-0y-jq6" secondAttribute="leading" constant="24" id="gpg-RB-IUL"/>
+                                                            <constraint firstItem="GnW-IB-hPs" firstAttribute="top" secondItem="gNF-0y-jq6" secondAttribute="top" constant="13" id="oEx-93-1J9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9t-8Q-ZY0">
+                                                        <rect key="frame" x="0.0" y="756" width="398" height="353"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-P9-sMm">
+                                                                <rect key="frame" x="24" y="4" width="366" height="345"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor asignado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnM-PU-JUK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                        <color key="textColor" name="NaranjaFx"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-ey-0Fa">
+                                                                        <rect key="frame" x="0.0" y="27" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Nombre completo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKt-IG-CJq">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="g3S-VI-EeU"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Ovidio Quintero Mantilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFh-2x-8fd">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisOscuro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DgY-gr-hAK">
+                                                                        <rect key="frame" x="0.0" y="52" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Documento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzK-0g-8t4">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="4HM-KG-vdV"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="91271315" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdc-Mu-APS">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-un-TIK">
+                                                                        <rect key="frame" x="0.0" y="77" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evM-dl-vD6">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="Rxk-TX-BcR"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="91271315" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsn-U1-0Wu">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehículo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-JC-yPf">
+                                                                        <rect key="frame" x="0.0" y="102" width="366" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                        <color key="textColor" name="NaranjaFx"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="r9e-f5-XtV">
+                                                                        <rect key="frame" x="0.0" y="129" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Placa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6H-dn-66G">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="vdO-X7-k2d"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="SZV600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USN-tv-FPP">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisOscuro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-8w-Lo7">
+                                                                        <rect key="frame" x="0.0" y="154" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Marca:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2p-Ge-kok">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="1s8-bQ-osF"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KENWORTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9P-s6-sem">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="y42-vE-KI3">
+                                                                        <rect key="frame" x="0.0" y="179" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-eC-UU6">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="cxc-tG-6bo"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amarillo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-hQ-FTZ">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="oQH-xW-gge">
+                                                                        <rect key="frame" x="0.0" y="204" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuracion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-oq-8qU">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="WiM-YF-tjO"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3S3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-EA-vWk">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enf-1L-5qG">
+                                                                        <rect key="frame" x="0.0" y="229" width="366" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                        <color key="textColor" name="NaranjaFx"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-bn-oQ7">
+                                                                        <rect key="frame" x="0.0" y="256" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Placa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-Py-XqK">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="m08-vM-hOV"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="SZV600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAD-4q-cvU">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisOscuro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-FQ-ery">
+                                                                        <rect key="frame" x="0.0" y="281" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Marca:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdE-an-Cja">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="HFl-80-4V5"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KENWORTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUP-Fd-UgC">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zw1-YG-G75">
+                                                                        <rect key="frame" x="0.0" y="306" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oim-AK-fRo">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="Q8K-sO-Gtw"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amarillo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-9M-U6r">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5mD-gi-Tmj">
+                                                                        <rect key="frame" x="0.0" y="331" width="366" height="14"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1i-8p-hu7">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="14"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="122" id="64l-e6-8nc"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3S3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-hl-rFW">
+                                                                                <rect key="frame" x="125" y="0.0" width="241" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Bga-P9-sMm" secondAttribute="trailing" constant="8" id="B2n-Z1-u4E"/>
+                                                            <constraint firstItem="Bga-P9-sMm" firstAttribute="leading" secondItem="n9t-8Q-ZY0" secondAttribute="leading" constant="24" id="Dan-Kf-DgP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Bga-P9-sMm" secondAttribute="bottom" constant="4" id="Lsw-WZ-4P0"/>
+                                                            <constraint firstItem="Bga-P9-sMm" firstAttribute="top" secondItem="n9t-8Q-ZY0" secondAttribute="top" constant="4" id="MPS-VN-rmN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvb-DS-KX6">
+                                                        <rect key="frame" x="0.0" y="1114" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="ZBM-AX-WIA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-rG-wYm">
+                                                        <rect key="frame" x="0.0" y="1120" width="398" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guía de carga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p05-sZ-It5">
+                                                                <rect key="frame" x="24" y="13" width="110.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-iB-NGP">
+                                                                <rect key="frame" x="6.5" y="9" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="mqb-1Y-sph"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="GuiaCargaButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="V3u-H9-0cL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expand more" translatesAutoresizingMaskIntoConstraints="NO" id="lxY-wK-1ks">
+                                                                <rect key="frame" x="350" y="8" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="YIK-vA-3Sz"/>
+                                                                    <constraint firstAttribute="width" constant="32" id="nnR-Pf-3O0"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="nhe-iB-NGP" firstAttribute="centerY" secondItem="6wK-rG-wYm" secondAttribute="centerY" id="3m4-jJ-Spz"/>
+                                                            <constraint firstItem="p05-sZ-It5" firstAttribute="top" secondItem="6wK-rG-wYm" secondAttribute="top" constant="13" id="5K5-8Y-3ex"/>
+                                                            <constraint firstAttribute="bottom" secondItem="p05-sZ-It5" secondAttribute="bottom" constant="14" id="D5c-Tf-a7j"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lxY-wK-1ks" secondAttribute="trailing" constant="16" id="IZk-hl-y5D"/>
+                                                            <constraint firstAttribute="height" constant="48" id="eKA-aC-q4T"/>
+                                                            <constraint firstItem="nhe-iB-NGP" firstAttribute="centerX" secondItem="6wK-rG-wYm" secondAttribute="centerX" id="gNB-a5-eCf"/>
+                                                            <constraint firstItem="lxY-wK-1ks" firstAttribute="centerY" secondItem="6wK-rG-wYm" secondAttribute="centerY" id="lFv-Sl-L2x"/>
+                                                            <constraint firstItem="p05-sZ-It5" firstAttribute="leading" secondItem="6wK-rG-wYm" secondAttribute="leading" constant="24" id="up0-0E-eJv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfc-5w-gKg">
+                                                        <rect key="frame" x="0.0" y="1173" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="MhQ-rZ-whp"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKu-Sr-OzL">
+                                                        <rect key="frame" x="0.0" y="1179" width="398" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guía de descarga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5H-vI-TPe">
+                                                                <rect key="frame" x="24" y="14" width="136.5" height="16"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKf-GF-cB8">
+                                                                <rect key="frame" x="6.5" y="10" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="cf3-Eq-V0M"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="GuiaDescargaButtton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="OkJ-U9-mp2"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expand more" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-sB-tOO">
+                                                                <rect key="frame" x="350" y="9" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="SeV-Gc-gPx"/>
+                                                                    <constraint firstAttribute="width" constant="32" id="cj7-Tc-Q5A"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="yKf-GF-cB8" firstAttribute="centerX" secondItem="FKu-Sr-OzL" secondAttribute="centerX" id="G6N-5D-SkF"/>
+                                                            <constraint firstItem="e5H-vI-TPe" firstAttribute="leading" secondItem="FKu-Sr-OzL" secondAttribute="leading" constant="24" id="Nvr-W8-iC4"/>
+                                                            <constraint firstItem="e5H-vI-TPe" firstAttribute="top" secondItem="FKu-Sr-OzL" secondAttribute="top" constant="14" id="Ptq-GI-3PY"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xgc-sB-tOO" secondAttribute="trailing" constant="16" id="UsB-dE-T1E"/>
+                                                            <constraint firstAttribute="bottom" secondItem="e5H-vI-TPe" secondAttribute="bottom" constant="20" symbolic="YES" id="YmS-6s-m62"/>
+                                                            <constraint firstItem="yKf-GF-cB8" firstAttribute="centerY" secondItem="FKu-Sr-OzL" secondAttribute="centerY" id="ucb-1E-fdn"/>
+                                                            <constraint firstItem="xgc-sB-tOO" firstAttribute="centerY" secondItem="FKu-Sr-OzL" secondAttribute="centerY" id="xtc-Ga-oYM"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cb0-k5-MzD">
+                                                        <rect key="frame" x="0.0" y="1234" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="RSc-Ol-9SZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIg-ch-Zhd">
+                                                        <rect key="frame" x="0.0" y="1240" width="398" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitácora de viaje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-FT-TIa">
+                                                                <rect key="frame" x="24" y="14" width="129" height="16"/>
+                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q3-p0-kgT">
+                                                                <rect key="frame" x="6.5" y="10" width="385" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="385" id="KSg-jr-5et"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <connections>
+                                                                    <action selector="BitacoraButton:" destination="HZ3-pO-B0D" eventType="touchUpInside" id="6gt-ND-faQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expand more" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-nb-cI4">
+                                                                <rect key="frame" x="350" y="9" width="32" height="32"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="0Vx-nX-ZXH"/>
+                                                                    <constraint firstAttribute="height" constant="32" id="afY-to-9Kt"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Qxa-nb-cI4" firstAttribute="centerY" secondItem="yIg-ch-Zhd" secondAttribute="centerY" id="4xs-0s-Ywf"/>
+                                                            <constraint firstItem="mQh-FT-TIa" firstAttribute="leading" secondItem="yIg-ch-Zhd" secondAttribute="leading" constant="24" id="L15-kZ-b6z"/>
+                                                            <constraint firstItem="mQh-FT-TIa" firstAttribute="top" secondItem="yIg-ch-Zhd" secondAttribute="top" constant="14" id="NhL-hv-KmE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mQh-FT-TIa" secondAttribute="bottom" constant="20" symbolic="YES" id="QJJ-0C-7JR"/>
+                                                            <constraint firstItem="7Q3-p0-kgT" firstAttribute="centerX" secondItem="yIg-ch-Zhd" secondAttribute="centerX" id="bZZ-zD-V81"/>
+                                                            <constraint firstItem="7Q3-p0-kgT" firstAttribute="centerY" secondItem="yIg-ch-Zhd" secondAttribute="centerY" id="lm3-k9-KcF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Qxa-nb-cI4" secondAttribute="trailing" constant="16" id="wEP-BX-S7A"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-xR-GyE">
+                                                        <rect key="frame" x="0.0" y="1295" width="398" height="1"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="txn-vj-SO0"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-bm-qMH">
+                                                <rect key="frame" x="67.5" y="13.5" width="58.5" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="r87-UC-jqb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d42-j0-MZt">
+                                                <rect key="frame" x="141" y="13.5" width="58.5" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="VMT-oZ-aSh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-2b-KGe">
+                                                <rect key="frame" x="214.5" y="13.5" width="58.5" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="kj9-tf-Gge"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNP-VB-U8w">
+                                                <rect key="frame" x="288" y="13.5" width="58.5" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="2YH-wx-oa0"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Blanco"/>
+                                        <constraints>
+                                            <constraint firstItem="7Na-1S-XrD" firstAttribute="leading" secondItem="7uV-bm-qMH" secondAttribute="trailing" id="263-7u-C3i"/>
+                                            <constraint firstItem="d42-j0-MZt" firstAttribute="centerY" secondItem="77n-SO-1oF" secondAttribute="centerY" id="28d-E9-mZF"/>
+                                            <constraint firstAttribute="trailing" secondItem="w8q-rj-pmt" secondAttribute="trailing" constant="8" id="4aI-OA-dxw"/>
+                                            <constraint firstItem="w8q-rj-pmt" firstAttribute="top" secondItem="PiX-Rr-jYq" secondAttribute="top" id="9Kf-d0-hXH"/>
+                                            <constraint firstItem="qNP-VB-U8w" firstAttribute="centerY" secondItem="whP-Fw-ohc" secondAttribute="centerY" id="A5V-Wq-XN0"/>
+                                            <constraint firstItem="7uV-bm-qMH" firstAttribute="centerY" secondItem="COB-wz-Dh8" secondAttribute="centerY" id="Tbb-pz-IGg"/>
+                                            <constraint firstItem="yQn-2b-KGe" firstAttribute="leading" secondItem="77n-SO-1oF" secondAttribute="trailing" id="Y63-zQ-rJ1"/>
+                                            <constraint firstItem="v0l-Ye-zud" firstAttribute="leading" secondItem="qNP-VB-U8w" secondAttribute="trailing" id="aBH-5k-BVC"/>
+                                            <constraint firstItem="qNP-VB-U8w" firstAttribute="leading" secondItem="whP-Fw-ohc" secondAttribute="trailing" id="aWp-4Y-VlQ"/>
+                                            <constraint firstItem="yQn-2b-KGe" firstAttribute="centerY" secondItem="77n-SO-1oF" secondAttribute="centerY" id="e0N-WH-1L4"/>
+                                            <constraint firstAttribute="bottom" secondItem="w8q-rj-pmt" secondAttribute="bottom" id="g5D-8b-keL"/>
+                                            <constraint firstItem="whP-Fw-ohc" firstAttribute="leading" secondItem="yQn-2b-KGe" secondAttribute="trailing" id="h4g-2T-Jgi"/>
+                                            <constraint firstItem="d42-j0-MZt" firstAttribute="leading" secondItem="7Na-1S-XrD" secondAttribute="trailing" id="odm-mq-Hm7"/>
+                                            <constraint firstItem="w8q-rj-pmt" firstAttribute="leading" secondItem="PiX-Rr-jYq" secondAttribute="leading" constant="8" id="s4D-lK-HWt"/>
+                                            <constraint firstItem="7uV-bm-qMH" firstAttribute="leading" secondItem="COB-wz-Dh8" secondAttribute="trailing" id="u5p-M3-jie"/>
+                                            <constraint firstItem="77n-SO-1oF" firstAttribute="leading" secondItem="d42-j0-MZt" secondAttribute="trailing" id="ulg-Vh-Mfa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PiX-Rr-jYq" firstAttribute="top" secondItem="EIc-KN-U5S" secondAttribute="top" constant="30" id="1Qv-82-KoY"/>
+                                    <constraint firstItem="PiX-Rr-jYq" firstAttribute="leading" secondItem="EIc-KN-U5S" secondAttribute="leading" id="3OS-oi-aCa"/>
+                                    <constraint firstAttribute="bottom" secondItem="PiX-Rr-jYq" secondAttribute="bottom" id="g06-Bd-8Fn"/>
+                                    <constraint firstAttribute="trailing" secondItem="PiX-Rr-jYq" secondAttribute="trailing" id="yHL-23-kki"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="12t-rC-y7M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oba-ET-ggv" firstAttribute="top" secondItem="12t-rC-y7M" secondAttribute="top" constant="26" id="3Wh-yb-Db5"/>
+                            <constraint firstItem="jvv-1e-1ov" firstAttribute="centerY" secondItem="oba-ET-ggv" secondAttribute="centerY" id="3nw-NQ-rUu"/>
+                            <constraint firstItem="mZU-Lb-yTg" firstAttribute="centerX" secondItem="12t-rC-y7M" secondAttribute="centerX" id="4zn-VN-g51"/>
+                            <constraint firstItem="jvv-1e-1ov" firstAttribute="centerX" secondItem="oba-ET-ggv" secondAttribute="centerX" id="DR2-ZA-Bsb"/>
+                            <constraint firstItem="PiX-Rr-jYq" firstAttribute="width" secondItem="ALm-Br-rwx" secondAttribute="width" id="IbV-BQ-P2S"/>
+                            <constraint firstItem="oba-ET-ggv" firstAttribute="leading" secondItem="12t-rC-y7M" secondAttribute="leading" constant="17" id="WfW-rY-UvF"/>
+                            <constraint firstItem="EIc-KN-U5S" firstAttribute="trailing" secondItem="12t-rC-y7M" secondAttribute="trailing" id="aGh-KS-iHv"/>
+                            <constraint firstItem="mZU-Lb-yTg" firstAttribute="centerY" secondItem="jvv-1e-1ov" secondAttribute="centerY" id="jKe-mt-3zD"/>
+                            <constraint firstItem="mZU-Lb-yTg" firstAttribute="top" secondItem="12t-rC-y7M" secondAttribute="top" constant="32" id="syr-SM-s34"/>
+                            <constraint firstItem="EIc-KN-U5S" firstAttribute="bottom" secondItem="12t-rC-y7M" secondAttribute="bottom" id="vD5-pq-H2t"/>
+                            <constraint firstItem="EIc-KN-U5S" firstAttribute="top" secondItem="mZU-Lb-yTg" secondAttribute="bottom" constant="14" id="w24-ZL-VXd"/>
+                            <constraint firstItem="EIc-KN-U5S" firstAttribute="leading" secondItem="12t-rC-y7M" secondAttribute="leading" id="xie-5d-KZR"/>
+                            <constraint firstAttribute="bottom" secondItem="EIc-KN-U5S" secondAttribute="bottom" id="yMf-T9-6rG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u3P-SV-G2j"/>
+                    <connections>
+                        <outlet property="BitacoraLabelName" destination="mQh-FT-TIa" id="CBP-zZ-agV"/>
+                        <outlet property="BitacoraView" destination="yIg-ch-Zhd" id="dM7-1j-oJN"/>
+                        <outlet property="CAsigColorLabel" destination="xe4-hQ-FTZ" id="69F-xC-1ca"/>
+                        <outlet property="CAsigConfigLabel" destination="YCi-EA-vWk" id="EMk-4a-bz5"/>
+                        <outlet property="CAsigMarcaLabel" destination="h9P-s6-sem" id="tVM-Dy-Uny"/>
+                        <outlet property="CAsigPlacaLabel" destination="USN-tv-FPP" id="oKN-1t-4jM"/>
+                        <outlet property="CAsigTlfLabel" destination="gsn-U1-0Wu" id="fBS-FC-MHZ"/>
+                        <outlet property="CAsignadoDocumentLabel" destination="xdc-Mu-APS" id="qxt-0s-7bc"/>
+                        <outlet property="CargaLabel" destination="4Oi-R4-UAi" id="RAo-KL-ETY"/>
+                        <outlet property="ConductorAsignadoName" destination="MFh-2x-8fd" id="0uZ-f0-L1y"/>
+                        <outlet property="DatosCondExpandir" destination="tfB-vh-SZW" id="5vL-Aw-XrZ"/>
+                        <outlet property="DatosCondView" destination="gNF-0y-jq6" id="fgc-U2-e7f"/>
+                        <outlet property="DemorarConductorLabel" destination="Ze6-CQ-PZ0" id="6CO-Fm-iCr"/>
+                        <outlet property="EstadoLabel" destination="SdF-zU-Rbw" id="lki-oi-yds"/>
+                        <outlet property="FechaCreacionLabel" destination="JgH-aO-1cm" id="Zyy-J9-Fvs"/>
+                        <outlet property="FinServicioLabel" destination="HUz-WL-BO6" id="9pK-NI-cL1"/>
+                        <outlet property="GuiaDescargaView" destination="FKu-Sr-OzL" id="Q3b-3a-mT7"/>
+                        <outlet property="IDBookingLabel" destination="QCr-Qd-poU" id="bu0-VQ-G4A"/>
+                        <outlet property="ImageCargue" destination="7Na-1S-XrD" id="pBo-hQ-9bE"/>
+                        <outlet property="ImageDescargue" destination="whP-Fw-ohc" id="m90-xI-kcp"/>
+                        <outlet property="ImageEnRuta" destination="77n-SO-1oF" id="gfm-Wo-KV1"/>
+                        <outlet property="ImageFindeServ" destination="v0l-Ye-zud" id="IGY-tw-g6r"/>
+                        <outlet property="ImageInicioServ" destination="COB-wz-Dh8" id="wov-fg-HyD"/>
+                        <outlet property="InfoDatosCondView" destination="n9t-8Q-ZY0" id="ftm-eS-MqC"/>
+                        <outlet property="InfoResServView" destination="U1J-oG-C06" id="nDY-qY-Nhv"/>
+                        <outlet property="LineaCargueEnruta" destination="d42-j0-MZt" id="5v0-SV-obQ"/>
+                        <outlet property="LineaEnRutaDescargue" destination="yQn-2b-KGe" id="nxp-Vq-Gzp"/>
+                        <outlet property="LineaServ" destination="h1U-WC-bCi" id="ROi-xT-nzu"/>
+                        <outlet property="ManifiestoDeCargaLabel" destination="3PF-JF-3Z6" id="CgK-vj-r3Y"/>
+                        <outlet property="RestriccionesLabel" destination="0dH-rj-eom" id="a2U-OL-msY"/>
+                        <outlet property="ResumServExpandir" destination="j77-UT-z6w" id="y6l-Yx-qZ9"/>
+                        <outlet property="ResumenServView" destination="mMB-t6-Oim" id="wVK-TA-cIM"/>
+                        <outlet property="RutaLabel" destination="V9f-5P-mlX" id="3mg-AB-COf"/>
+                        <outlet property="ServicioIDLabel" destination="mZU-Lb-yTg" id="yee-8a-yvj"/>
+                        <outlet property="ServicioLabelName" destination="7Zg-sg-cQK" id="M5l-0p-44V"/>
+                        <outlet property="TipoNegociacionLabel" destination="hBC-Qh-gZi" id="aZE-ip-5bz"/>
+                        <outlet property="TrailerColorLabel" destination="2Y9-9M-U6r" id="IKe-1r-7S3"/>
+                        <outlet property="TrailerMarcaLabel" destination="PUP-Fd-UgC" id="hGa-i9-2gK"/>
+                        <outlet property="TrailerModeloLabel" destination="Saj-hl-rFW" id="Sd9-yu-IaI"/>
+                        <outlet property="TrailerPlacaLabel" destination="RAD-4q-cvU" id="B7z-D1-B4k"/>
+                        <outlet property="VehSolicitadoLabel" destination="dm1-NX-LIm" id="t84-MB-m7S"/>
+                        <outlet property="VerDocumento" destination="fZr-Ka-DLL" id="dma-3Q-rOP"/>
+                        <outlet property="VerDocumento2" destination="6jR-kq-2MW" id="tuT-YW-Ipl"/>
+                        <outlet property="ViewInfo" destination="K3J-Ys-vbq" id="QOI-aL-sys"/>
+                        <outlet property="ViewServ" destination="5Xk-KH-zUo" id="BoQ-yF-iG2"/>
+                        <outlet property="VistaLineas" destination="auz-uj-5Wc" id="Ffz-uK-SWm"/>
+                        <outlet property="expandirInfoImageView" destination="cwi-aJ-7tu" id="KsV-K2-MnU"/>
+                        <outlet property="expandirServImageView" destination="gvf-fJ-aJy" id="HG2-zq-JkY"/>
+                        <outlet property="lineaBitacora" destination="PDa-xR-GyE" id="T6L-Vt-TmL"/>
+                        <outlet property="lineaDatos" destination="l9G-8Q-SKR" id="vhf-bn-PRD"/>
+                        <outlet property="lineaDatos2" destination="kvb-DS-KX6" id="W0E-TJ-VBv"/>
+                        <outlet property="lineaDescargue" destination="Cb0-k5-MzD" id="iQl-Ow-iZo"/>
+                        <outlet property="lineaInfoView" destination="mm8-b5-cWw" id="rKN-lz-7jj"/>
+                        <outlet property="lineaInicioCargue" destination="7uV-bm-qMH" id="W7u-bG-N1P"/>
+                        <outlet property="lineaResum" destination="BnM-GC-BNP" id="bYw-OI-86d"/>
+                        <outlet property="lineaResum2" destination="3hh-24-qkc" id="AXZ-dp-Mxr"/>
+                        <outlet property="lineaaDescargueFin" destination="qNP-VB-U8w" id="euX-Xb-viG"/>
+                        <outlet property="tCargueLabel" destination="22q-3c-Kgr" id="rPm-WQ-9Pj"/>
+                        <outlet property="tDescargue" destination="OYd-Sz-RI9" id="r08-Vy-cOg"/>
+                        <outlet property="tEsperaCargueLabel" destination="IWb-oD-VIz" id="164-sq-PCL"/>
+                        <outlet property="tEsperaDescargueLabel" destination="bcd-Ng-vsU" id="8uE-j2-wp4"/>
+                        <segue destination="9BD-Fb-ayr" kind="show" identifier="showGuia" id="Hyl-IG-eTj"/>
+                        <segue destination="eJy-pA-id7" kind="show" identifier="BitacoraDeViaje" id="c4R-Db-EyA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dh-Ql-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798.5507246376812" y="54.910714285714285"/>
+        </scene>
+        <!--UIViewController-ViF-jB-43u-->
+        <scene sceneID="YiA-Dd-5Oa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ServiciosSolicitados" referencedIdentifier="UIViewController-ViF-jB-43u" id="9BD-Fb-ayr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVk-hm-GXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557.971014492754" y="54.910714285714285"/>
+        </scene>
+        <!--showBitacora-->
+        <scene sceneID="CMq-g8-hCY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ServiciosSolicitados" referencedIdentifier="showBitacora" id="eJy-pA-id7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ksD-Iz-92T"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0HO-p5-spa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Expand more" width="24" height="24"/>
+        <image name="ic_back_icon" width="24" height="24"/>
+        <image name="ic_expand_more_up" width="24" height="24"/>
+        <namedColor name="AzulOscuro">
+            <color red="0.047058823529411764" green="0.078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blanco">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrisClaro">
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrisOscuro">
+            <color red="0.30196078431372547" green="0.30980392156862746" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NaranjaFx">
+            <color red="1" green="0.23499999940395355" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

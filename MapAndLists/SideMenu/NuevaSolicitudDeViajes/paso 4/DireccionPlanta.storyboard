@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMV-XB-3Fg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HurmeGeometricSans3 SemiBoldOblique.otf">
+            <string>HurmeGeometricSans3-SemiBoldObl</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Direccion Planta View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DireccionPlanta" id="Y6W-OH-hqX" customClass="DireccionPlantaViewController" customModule="MapAndLists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rWA-Pt-b4v">
+                                <rect key="frame" x="22" y="54" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8HI-4l-aZ3"/>
+                                    <constraint firstAttribute="width" constant="28" id="Otg-O4-LH9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ye-Fb-Cue">
+                                <rect key="frame" x="16" y="48" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LZ9-en-zO6"/>
+                                    <constraint firstAttribute="height" constant="40" id="rw9-eg-irh"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="Backbutton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lf4-zN-mLA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plantas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62e-6p-9Ae">
+                                <rect key="frame" x="173" y="58" width="68.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jId-vB-a6p">
+                                <rect key="frame" x="10" y="96" width="394" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loupe" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-RD-upk">
+                                        <rect key="frame" x="8" y="5.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="MZO-KY-8yi"/>
+                                            <constraint firstAttribute="width" constant="25" id="Qjz-55-pNk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar Dirección o Planta..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-b8-3Eg">
+                                        <rect key="frame" x="41" y="9" width="337" height="18.5"/>
+                                        <color key="backgroundColor" name="Blanco"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18.5" id="I1H-M4-SIW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6Gm-Jl-1B8"/>
+                                    <constraint firstItem="rvn-RD-upk" firstAttribute="leading" secondItem="jId-vB-a6p" secondAttribute="leading" constant="8" id="9fA-VB-jJg"/>
+                                    <constraint firstItem="rvn-RD-upk" firstAttribute="centerY" secondItem="vhb-b8-3Eg" secondAttribute="centerY" id="B4I-LQ-uox"/>
+                                    <constraint firstItem="vhb-b8-3Eg" firstAttribute="leading" secondItem="rvn-RD-upk" secondAttribute="trailing" constant="8" id="Lch-or-SCE"/>
+                                    <constraint firstItem="rvn-RD-upk" firstAttribute="centerY" secondItem="jId-vB-a6p" secondAttribute="centerY" id="Udz-J2-maF"/>
+                                    <constraint firstAttribute="trailing" secondItem="vhb-b8-3Eg" secondAttribute="trailing" constant="16" id="bvC-xd-GDg"/>
+                                    <constraint firstItem="vhb-b8-3Eg" firstAttribute="centerY" secondItem="jId-vB-a6p" secondAttribute="centerY" id="oDc-Dp-FWs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GCz-Bc-cVt">
+                                <rect key="frame" x="0.0" y="142" width="414" height="754"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="asR-GD-7Tm"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="qeh-t0-ej8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rWA-Pt-b4v" firstAttribute="centerX" secondItem="1ye-Fb-Cue" secondAttribute="centerX" id="2Wm-Ma-GOk"/>
+                            <constraint firstItem="GCz-Bc-cVt" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="G7J-0G-e99"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jId-vB-a6p" secondAttribute="trailing" constant="10" id="PO4-RC-T7Y"/>
+                            <constraint firstItem="jId-vB-a6p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="RZu-2g-2as"/>
+                            <constraint firstAttribute="bottom" secondItem="GCz-Bc-cVt" secondAttribute="bottom" id="UZw-ja-fbZ"/>
+                            <constraint firstItem="GCz-Bc-cVt" firstAttribute="top" secondItem="jId-vB-a6p" secondAttribute="bottom" constant="10" id="bpe-ZN-J8k"/>
+                            <constraint firstItem="jId-vB-a6p" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="d4f-dX-eLR"/>
+                            <constraint firstItem="rWA-Pt-b4v" firstAttribute="centerY" secondItem="1ye-Fb-Cue" secondAttribute="centerY" id="hUX-Wy-OUT"/>
+                            <constraint firstItem="GCz-Bc-cVt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="maw-Qy-D42"/>
+                            <constraint firstItem="1ye-Fb-Cue" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="nx5-2I-mzg"/>
+                            <constraint firstItem="62e-6p-9Ae" firstAttribute="centerY" secondItem="rWA-Pt-b4v" secondAttribute="centerY" id="of7-1A-YuG"/>
+                            <constraint firstItem="62e-6p-9Ae" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-30" id="pUj-7m-twp"/>
+                            <constraint firstItem="62e-6p-9Ae" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ql6-b6-Ii4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H3m-YX-Iww"/>
+                    <connections>
+                        <outlet property="buscador" destination="vhb-b8-3Eg" id="ilU-QN-jsu"/>
+                        <outlet property="tableView" destination="GCz-Bc-cVt" id="Bf6-7z-UDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gaX-ds-EcT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XMV-XB-3Fg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lOd-DU-bMc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="bW6-1N-rrY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSd-nJ-af7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back_icon" width="24" height="24"/>
+        <image name="loupe" width="64" height="64"/>
+        <namedColor name="Blanco">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

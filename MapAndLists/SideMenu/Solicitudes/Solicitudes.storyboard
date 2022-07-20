@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HurmeGeometricSans3 SemiBoldOblique.otf">
+            <string>HurmeGeometricSans3-SemiBoldObl</string>
+        </array>
+        <array key="HurmeGeometricSans3.otf">
+            <string>HurmeGeometricSans3-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Solicitudes View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SolicitudesViewController" customModule="MapAndLists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCs-yL-ZuF">
+                                <rect key="frame" x="0.0" y="52" width="414" height="116"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180" translatesAutoresizingMaskIntoConstraints="NO" id="4Gt-Q6-pCZ">
+                                        <rect key="frame" x="177" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2XE-Jk-TI0"/>
+                                            <constraint firstAttribute="width" constant="60" id="A3h-5h-49K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitudes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-F8-vzn">
+                                        <rect key="frame" x="24" y="80" width="99" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="TSm-Ba-yE9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher_burger_menu" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-0G-CQg">
+                                        <rect key="frame" x="9" y="24" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="HCi-Mx-J5W"/>
+                                            <constraint firstAttribute="height" constant="32" id="ktt-44-eOq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi7-aC-8eX">
+                                        <rect key="frame" x="10" y="25" width="30" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="SideMenu:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IXM-Hl-pX0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4Gt-Q6-pCZ" firstAttribute="top" secondItem="hCs-yL-ZuF" secondAttribute="top" id="0fK-K2-Bh7"/>
+                                    <constraint firstItem="KXR-0G-CQg" firstAttribute="centerX" secondItem="Yi7-aC-8eX" secondAttribute="centerX" id="25S-Dd-x7i"/>
+                                    <constraint firstItem="FZh-F8-vzn" firstAttribute="leading" secondItem="hCs-yL-ZuF" secondAttribute="leading" constant="24" id="3oG-VB-QqN"/>
+                                    <constraint firstItem="FZh-F8-vzn" firstAttribute="top" secondItem="Yi7-aC-8eX" secondAttribute="bottom" constant="25" id="41X-5b-paM"/>
+                                    <constraint firstAttribute="bottom" secondItem="FZh-F8-vzn" secondAttribute="bottom" constant="16" id="Drw-j2-Qci"/>
+                                    <constraint firstItem="Yi7-aC-8eX" firstAttribute="top" secondItem="hCs-yL-ZuF" secondAttribute="top" constant="25" id="EO5-6z-Air"/>
+                                    <constraint firstItem="KXR-0G-CQg" firstAttribute="centerY" secondItem="Yi7-aC-8eX" secondAttribute="centerY" id="QaC-Vs-qDn"/>
+                                    <constraint firstItem="4Gt-Q6-pCZ" firstAttribute="centerX" secondItem="hCs-yL-ZuF" secondAttribute="centerX" id="hcF-Mp-Fvr"/>
+                                    <constraint firstItem="Yi7-aC-8eX" firstAttribute="leading" secondItem="hCs-yL-ZuF" secondAttribute="leading" constant="10" id="k6L-DC-tis"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-vB-916">
+                                <rect key="frame" x="27" y="176" width="377" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loupe" translatesAutoresizingMaskIntoConstraints="NO" id="dvi-KM-a4P">
+                                        <rect key="frame" x="8" y="5.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="3N3-nk-yOn"/>
+                                            <constraint firstAttribute="height" constant="25" id="HCF-8d-5ee"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar Vehiculo..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36x-YX-krk">
+                                        <rect key="frame" x="41" y="9" width="328" height="18"/>
+                                        <color key="backgroundColor" name="Blanco"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dvi-KM-a4P" firstAttribute="centerY" secondItem="36x-YX-krk" secondAttribute="centerY" id="7G2-5w-Tbz"/>
+                                    <constraint firstItem="36x-YX-krk" firstAttribute="centerY" secondItem="sGv-vB-916" secondAttribute="centerY" id="C6h-Nw-Gzn"/>
+                                    <constraint firstItem="36x-YX-krk" firstAttribute="leading" secondItem="dvi-KM-a4P" secondAttribute="trailing" constant="8" id="KCr-Zt-3lG"/>
+                                    <constraint firstItem="dvi-KM-a4P" firstAttribute="leading" secondItem="sGv-vB-916" secondAttribute="leading" constant="8" id="QS3-Nl-CHN"/>
+                                    <constraint firstAttribute="trailing" secondItem="36x-YX-krk" secondAttribute="trailing" constant="8" id="am5-gV-k6a"/>
+                                    <constraint firstItem="dvi-KM-a4P" firstAttribute="centerY" secondItem="sGv-vB-916" secondAttribute="centerY" id="us9-BX-Ump"/>
+                                    <constraint firstAttribute="height" constant="36" id="vjk-Yn-SpP"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-ra-QcX">
+                                <rect key="frame" x="0.0" y="220" width="414" height="676"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="71x-Im-D0E"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="gaH-Yy-VTN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zLx-ra-QcX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6md-u3-25r"/>
+                            <constraint firstItem="hCs-yL-ZuF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="7b6-U2-uob"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hCs-yL-ZuF" secondAttribute="trailing" id="FWs-hz-q9X"/>
+                            <constraint firstItem="hCs-yL-ZuF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IDo-ff-uaf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sGv-vB-916" secondAttribute="trailing" constant="10" id="KYH-Gk-5Jf"/>
+                            <constraint firstItem="zLx-ra-QcX" firstAttribute="top" secondItem="sGv-vB-916" secondAttribute="bottom" constant="8" symbolic="YES" id="O7J-3i-bRA"/>
+                            <constraint firstItem="sGv-vB-916" firstAttribute="top" secondItem="hCs-yL-ZuF" secondAttribute="bottom" constant="8" id="YIb-Ag-I2L"/>
+                            <constraint firstItem="sGv-vB-916" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="jwJ-pj-grB"/>
+                            <constraint firstAttribute="bottom" secondItem="zLx-ra-QcX" secondAttribute="bottom" id="qjy-kM-z3M"/>
+                            <constraint firstItem="zLx-ra-QcX" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="vim-P9-USH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VAp-Bs-Bx3"/>
+                    <connections>
+                        <outlet property="Buscador" destination="36x-YX-krk" id="l8o-7c-VMk"/>
+                        <outlet property="tableView" destination="zLx-ra-QcX" id="S8T-77-f6O"/>
+                        <segue destination="RAW-xh-3nh" kind="show" identifier="showSolicitudid" id="x2m-Uj-vtZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="33.482142857142854"/>
+        </scene>
+        <!--Solicitud View Controller-->
+        <scene sceneID="khg-5r-tbv">
+            <objects>
+                <viewController storyboardIdentifier="showSolicitud" id="RAW-xh-3nh" customClass="SolicitudViewController" customModule="MapAndLists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUQ-YP-2m6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2u-1p-Pw5">
+                                <rect key="frame" x="14" y="70" width="383.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="20"/>
+                                <color key="textColor" name="AzulOscuro"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3M-T0-EFb">
+                                <rect key="frame" x="16" y="42" width="40" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ac7-N5-0cV"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="Back:" destination="RAW-xh-3nh" eventType="touchUpInside" id="2jW-Zu-j15"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_icon" translatesAutoresizingMaskIntoConstraints="NO" id="J4Q-cn-gme">
+                                <rect key="frame" x="22" y="66" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8vp-WS-sWj"/>
+                                    <constraint firstAttribute="width" constant="28" id="lbO-6n-B25"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-S9-otj">
+                                <rect key="frame" x="0.0" y="106" width="414" height="790"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-Uc-Dte">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="539"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2E7-bk-Je2">
+                                                <rect key="frame" x="7" y="10" width="400" height="278"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ddD-fr-NEy">
+                                                        <rect key="frame" x="31" y="15" width="338" height="248"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjX-sp-HBs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="338" height="248"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J1W-vc-pTN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="248"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agv-S1-tQy">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="18" id="Rkt-pZ-S2a"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                <color key="textColor" name="GrisOscuro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-7a-FAz">
+                                                                                <rect key="frame" x="0.0" y="28" width="338" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de creación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcC-Lf-t4h">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="9He-Rg-08s"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-08-31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-Hs-XXc">
+                                                                                        <rect key="frame" x="0.0" y="18" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="fNe-hI-lGk"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <color key="textColor" name="GrisClaro"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-dw-roa">
+                                                                                <rect key="frame" x="0.0" y="74" width="338" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de cargue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-59-jya">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="34L-Zc-w0T"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-09-01 Todo el dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T71-xI-y1d">
+                                                                                        <rect key="frame" x="0.0" y="18" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="fUR-44-oKX"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <color key="textColor" name="GrisClaro"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-Mt-LfU">
+                                                                                <rect key="frame" x="0.0" y="120" width="338" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2X-es-hLh">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="sG4-mF-wpr"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARTAGENA DE INDIAS - BOGOTÁ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqP-ON-2pr">
+                                                                                        <rect key="frame" x="0.0" y="18" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="L0V-6r-lHg"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <color key="textColor" name="GrisClaro"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o6u-iC-pMQ">
+                                                                                <rect key="frame" x="0.0" y="166" width="338" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Negociación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeM-wG-zeP">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="fnz-tf-EH9"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por viaje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcF-R2-bVh">
+                                                                                        <rect key="frame" x="0.0" y="18" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="4Qj-qD-YIf"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <color key="textColor" name="GrisClaro"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-hu-Lm2">
+                                                                                <rect key="frame" x="0.0" y="212" width="338" height="36"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc6-RK-c1Q">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="9OR-nL-f2C"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cajas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lh-D6-Ghb">
+                                                                                        <rect key="frame" x="0.0" y="18" width="338" height="18"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="18" id="dN2-PK-qMQ"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="14"/>
+                                                                                        <color key="textColor" name="GrisClaro"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="J1W-vc-pTN" secondAttribute="trailing" id="1tS-FL-UQv"/>
+                                                                    <constraint firstItem="J1W-vc-pTN" firstAttribute="top" secondItem="GjX-sp-HBs" secondAttribute="top" id="LOR-4X-vRB"/>
+                                                                    <constraint firstItem="J1W-vc-pTN" firstAttribute="leading" secondItem="GjX-sp-HBs" secondAttribute="leading" id="YsV-CJ-gRq"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="J1W-vc-pTN" secondAttribute="bottom" id="aGR-KV-yin"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="GjX-sp-HBs" firstAttribute="top" secondItem="ddD-fr-NEy" secondAttribute="top" id="FfU-LD-Iy3"/>
+                                                            <constraint firstItem="GjX-sp-HBs" firstAttribute="leading" secondItem="ddD-fr-NEy" secondAttribute="leading" id="JmC-5Z-AYN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GjX-sp-HBs" secondAttribute="trailing" id="TeD-cL-aCP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GjX-sp-HBs" secondAttribute="bottom" id="Uzg-Wt-Fuh"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ddD-fr-NEy" secondAttribute="trailing" constant="31" id="FoM-y0-dWY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ddD-fr-NEy" secondAttribute="bottom" constant="15" id="Lt4-K8-nCD"/>
+                                                    <constraint firstItem="ddD-fr-NEy" firstAttribute="leading" secondItem="2E7-bk-Je2" secondAttribute="leading" constant="31" id="Yid-Lf-c4k"/>
+                                                    <constraint firstItem="ddD-fr-NEy" firstAttribute="top" secondItem="2E7-bk-Je2" secondAttribute="top" constant="15" id="huW-Pl-MyO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNs-Tc-nYI">
+                                                <rect key="frame" x="8" y="296" width="400" height="236"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado de las solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7D-CW-1KS">
+                                                        <rect key="frame" x="12" y="8" width="193" height="19"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Ofl-P2-Kwn">
+                                                        <rect key="frame" x="0.0" y="48" width="400" height="160"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVn-y5-O1l" customClass="PieChartView" customModule="Charts">
+                                                                <rect key="frame" x="0.0" y="0.0" width="170" height="160"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="160" id="ica-yj-bTZ"/>
+                                                                    <constraint firstAttribute="width" constant="170" id="uog-eV-Dx7"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UXI-dk-70c">
+                                                                <rect key="frame" x="196" y="19" width="204" height="122"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-Cr-B23">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="36"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sin Asignar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-u5-4di">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="204" height="19"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="19"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Vehículos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJr-hK-w12">
+                                                                                <rect key="frame" x="0.0" y="20" width="204" height="16"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yfd-42-LqJ">
+                                                                        <rect key="frame" x="0.0" y="43" width="204" height="36"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asignados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-qA-rKk">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="204" height="19"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="19"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Vehículos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rG7-Wd-Vx6">
+                                                                                <rect key="frame" x="0.0" y="20" width="204" height="16"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-47-BdH">
+                                                                        <rect key="frame" x="0.0" y="86" width="204" height="36"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvr-CC-thJ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="204" height="19"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="19"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Vehículos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-se-1cP">
+                                                                                <rect key="frame" x="0.0" y="20" width="204" height="16"/>
+                                                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="16"/>
+                                                                                <color key="textColor" name="GrisClaro"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="RVn-y5-O1l" firstAttribute="top" secondItem="Ofl-P2-Kwn" secondAttribute="top" id="4Qw-Kk-nt1"/>
+                                                            <constraint firstAttribute="bottom" secondItem="RVn-y5-O1l" secondAttribute="bottom" id="ckY-Xo-UjU"/>
+                                                            <constraint firstItem="RVn-y5-O1l" firstAttribute="leading" secondItem="Ofl-P2-Kwn" secondAttribute="leading" id="vDF-k8-Byh"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Ofl-P2-Kwn" secondAttribute="trailing" id="DfZ-Gd-Cx5"/>
+                                                    <constraint firstItem="Ofl-P2-Kwn" firstAttribute="top" secondItem="H7D-CW-1KS" secondAttribute="bottom" constant="21" id="HvE-9k-gQH"/>
+                                                    <constraint firstItem="Ofl-P2-Kwn" firstAttribute="leading" secondItem="PNs-Tc-nYI" secondAttribute="leading" id="Kyj-8T-cAA"/>
+                                                    <constraint firstItem="H7D-CW-1KS" firstAttribute="top" secondItem="PNs-Tc-nYI" secondAttribute="top" constant="8" id="O6u-ze-haQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ofl-P2-Kwn" secondAttribute="bottom" constant="28" id="TCB-4Y-Hek"/>
+                                                    <constraint firstItem="H7D-CW-1KS" firstAttribute="leading" secondItem="PNs-Tc-nYI" secondAttribute="leading" constant="12" id="Znc-HN-Tyk"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PNs-Tc-nYI" secondAttribute="bottom" constant="8" id="2Sb-pN-ASR"/>
+                                            <constraint firstItem="2E7-bk-Je2" firstAttribute="top" secondItem="rl6-Uc-Dte" secondAttribute="top" constant="10" id="4Au-pJ-K4h"/>
+                                            <constraint firstAttribute="trailing" secondItem="PNs-Tc-nYI" secondAttribute="trailing" constant="7" id="HN8-Ja-UYb"/>
+                                            <constraint firstAttribute="trailing" secondItem="2E7-bk-Je2" secondAttribute="trailing" constant="7" id="Q6T-e0-6Ey"/>
+                                            <constraint firstItem="2E7-bk-Je2" firstAttribute="leading" secondItem="rl6-Uc-Dte" secondAttribute="leading" constant="7" id="T6O-Bz-hyH"/>
+                                            <constraint firstItem="PNs-Tc-nYI" firstAttribute="top" secondItem="2E7-bk-Je2" secondAttribute="bottom" constant="7" id="VRV-JR-Jv6"/>
+                                            <constraint firstItem="PNs-Tc-nYI" firstAttribute="leading" secondItem="rl6-Uc-Dte" secondAttribute="leading" constant="7" id="ojv-Go-N1I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rl6-Uc-Dte" secondAttribute="bottom" id="DdI-1I-YHU"/>
+                                    <constraint firstItem="rl6-Uc-Dte" firstAttribute="top" secondItem="eSe-S9-otj" secondAttribute="top" id="dBY-hT-GaC"/>
+                                    <constraint firstItem="rl6-Uc-Dte" firstAttribute="leading" secondItem="eSe-S9-otj" secondAttribute="leading" id="lZY-Vb-5bV"/>
+                                    <constraint firstAttribute="trailing" secondItem="rl6-Uc-Dte" secondAttribute="trailing" id="pzQ-nb-SbI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Vq4-0c-rdT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fia-Sy-cV2"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mL0-nd-qjX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eSe-S9-otj" firstAttribute="bottom" secondItem="mL0-nd-qjX" secondAttribute="bottom" constant="34" id="1Mb-34-dbW"/>
+                            <constraint firstItem="D2u-1p-Pw5" firstAttribute="centerY" secondItem="J4Q-cn-gme" secondAttribute="centerY" id="56e-gi-ClF"/>
+                            <constraint firstItem="J4Q-cn-gme" firstAttribute="centerX" secondItem="s3M-T0-EFb" secondAttribute="centerX" id="J22-Bf-wJ6"/>
+                            <constraint firstItem="eSe-S9-otj" firstAttribute="top" secondItem="D2u-1p-Pw5" secondAttribute="bottom" constant="16" id="LUP-XX-N4V"/>
+                            <constraint firstItem="eSe-S9-otj" firstAttribute="leading" secondItem="mL0-nd-qjX" secondAttribute="leading" id="Tlu-wd-ai7"/>
+                            <constraint firstItem="s3M-T0-EFb" firstAttribute="leading" secondItem="mL0-nd-qjX" secondAttribute="leading" constant="16" id="V8W-1h-22q"/>
+                            <constraint firstItem="mL0-nd-qjX" firstAttribute="trailing" secondItem="rl6-Uc-Dte" secondAttribute="trailing" id="VUU-oM-xbR"/>
+                            <constraint firstItem="D2u-1p-Pw5" firstAttribute="top" secondItem="mL0-nd-qjX" secondAttribute="top" constant="26" id="X9S-K0-6Cr"/>
+                            <constraint firstItem="rl6-Uc-Dte" firstAttribute="leading" secondItem="mL0-nd-qjX" secondAttribute="leading" id="Zue-bf-9sU"/>
+                            <constraint firstItem="mL0-nd-qjX" firstAttribute="trailing" secondItem="D2u-1p-Pw5" secondAttribute="trailing" constant="16.5" id="bVN-JY-R1g"/>
+                            <constraint firstItem="mL0-nd-qjX" firstAttribute="top" secondItem="s3M-T0-EFb" secondAttribute="top" constant="2" id="g9M-Jk-qVs"/>
+                            <constraint firstItem="D2u-1p-Pw5" firstAttribute="leading" secondItem="mL0-nd-qjX" secondAttribute="leading" constant="14" id="jdH-b4-m1h"/>
+                            <constraint firstItem="mL0-nd-qjX" firstAttribute="trailing" secondItem="eSe-S9-otj" secondAttribute="trailing" id="tUA-Vj-sHU"/>
+                            <constraint firstItem="J4Q-cn-gme" firstAttribute="centerY" secondItem="s3M-T0-EFb" secondAttribute="centerY" id="yJa-S6-H49"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M44-Ye-rFu"/>
+                    <connections>
+                        <outlet property="AsignadosLabel" destination="rG7-Wd-Vx6" id="QE3-sf-kJ4"/>
+                        <outlet property="EnServLabel" destination="sSy-se-1cP" id="HAW-WR-tcs"/>
+                        <outlet property="LabelSolicitud" destination="D2u-1p-Pw5" id="Ys5-6u-6XT"/>
+                        <outlet property="PieView" destination="RVn-y5-O1l" id="fDm-PM-N1D"/>
+                        <outlet property="SinAsignarLabel" destination="FJr-hK-w12" id="ReM-BN-105"/>
+                        <outlet property="Viewss" destination="rl6-Uc-Dte" id="vRF-DM-VJG"/>
+                        <outlet property="cargaaLabel" destination="3Lh-D6-Ghb" id="157-ql-nyd"/>
+                        <outlet property="fechaCargueLabel" destination="T71-xI-y1d" id="p8C-9q-GAy"/>
+                        <outlet property="fechaLabel" destination="DMo-Hs-XXc" id="9Dh-9s-SFt"/>
+                        <outlet property="negociacionLabel" destination="fcF-R2-bVh" id="exp-Gd-T6B"/>
+                        <outlet property="rutaLabel" destination="yqP-ON-2pr" id="KkB-de-Fge"/>
+                        <outlet property="shadowView" destination="2E7-bk-Je2" id="z29-kT-y0l"/>
+                        <outlet property="shadowView2" destination="PNs-Tc-nYI" id="WmH-Kr-7hm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9Y-68-QTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752.1739130434785" y="38.839285714285715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Mf-lX-4pa">
+            <objects>
+                <navigationController storyboardIdentifier="showSolicitudes" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="py7-jf-jg3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n6y-KM-fg4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Cl9-hI-yeZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAI-PT-oTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="33.482142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="180" width="135" height="135"/>
+        <image name="ic_back_icon" width="24" height="24"/>
+        <image name="ic_launcher_burger_menu" width="24" height="24"/>
+        <image name="loupe" width="64" height="64"/>
+        <namedColor name="AzulOscuro">
+            <color red="0.047058823529411764" green="0.078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blanco">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrisClaro">
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrisOscuro">
+            <color red="0.30196078431372547" green="0.30980392156862746" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

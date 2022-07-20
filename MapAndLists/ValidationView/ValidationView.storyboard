@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yWB-oy-iGf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HurmeGeometricSans3 SemiBoldOblique.otf">
+            <string>HurmeGeometricSans3-SemiBoldObl</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Validation View View Controller-->
+        <scene sceneID="SCR-QE-Nxw">
+            <objects>
+                <viewController id="yWB-oy-iGf" customClass="ValidationViewViewController" customModule="MapAndLists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRN-RC-0Q6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP AND LISTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3I-Yd-sIq">
+                                <rect key="frame" x="101.5" y="802" width="211" height="28"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="28"/>
+                                <color key="textColor" name="Blanco"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gWh-df-7a5">
+                                <rect key="frame" x="195" y="441" width="24" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GHN-rF-yBu"/>
+                        <color key="backgroundColor" name="NaranjaFx"/>
+                        <constraints>
+                            <constraint firstItem="n3I-Yd-sIq" firstAttribute="centerX" secondItem="GHN-rF-yBu" secondAttribute="centerX" id="2gh-eC-5Xj"/>
+                            <constraint firstItem="gWh-df-7a5" firstAttribute="centerY" secondItem="GHN-rF-yBu" secondAttribute="centerY" id="4wG-dE-2F2"/>
+                            <constraint firstItem="gWh-df-7a5" firstAttribute="centerX" secondItem="GHN-rF-yBu" secondAttribute="centerX" id="dLT-4e-uBN"/>
+                            <constraint firstItem="GHN-rF-yBu" firstAttribute="bottom" secondItem="n3I-Yd-sIq" secondAttribute="bottom" constant="32" id="nyk-5L-2fH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="oBz-r7-yuV" kind="show" identifier="showOnBoarding" id="fKl-8V-6aJ"/>
+                        <segue destination="kjF-lf-Pwn" kind="show" identifier="showMain" id="WHp-p5-YZI"/>
+                        <segue destination="wR6-Ji-w3V" kind="show" identifier="showInicio" id="tHk-SO-o2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxw-MK-RfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="37"/>
+        </scene>
+        <!--showInicio-->
+        <scene sceneID="dIx-c3-EdN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="InicioUbicacionVeh" storyboardName="InicioUbicacionVeh" referencedIdentifier="showInicio" id="wR6-Ji-w3V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rMD-pN-n1u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-vN-vLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="-52"/>
+        </scene>
+        <!--showMain-->
+        <scene sceneID="8Jt-kI-ILy">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="showMain" id="kjF-lf-Pwn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="52d-Lr-Kba"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKo-vz-Kgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="37"/>
+        </scene>
+        <!--OnBoarding-->
+        <scene sceneID="mSZ-dc-2Dk">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OnBoarding" storyboardName="OnBoarding" referencedIdentifier="OnBoarding" id="oBz-r7-yuV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1xQ-Y0-bJr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EW9-Pd-lJk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back_icon" width="24" height="24"/>
+        <namedColor name="Blanco">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NaranjaFx">
+            <color red="1" green="0.23499999940395355" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

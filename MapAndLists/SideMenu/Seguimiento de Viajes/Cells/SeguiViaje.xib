@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HurmeGeometricSans3 SemiBoldOblique.otf">
+            <string>HurmeGeometricSans3-SemiBoldObl</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="showSeguiviajeReusable" id="lFK-r2-GfG" customClass="SeguiViajeTableViewCell" customModule="MapAndLists" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lFK-r2-GfG" id="FY7-um-kXh">
+                <rect key="frame" x="0.0" y="0.0" width="346.5" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Funza - Villavicencio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9w-QJ-cHz">
+                        <rect key="frame" x="15" y="18" width="156" height="16"/>
+                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alimento concentrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goR-wc-SF5">
+                        <rect key="frame" x="15" y="34" width="145" height="23"/>
+                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                        <color key="textColor" name="GrisClaro"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Servicio Iniciado 20/10/28 todo el dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-hN-l5X">
+                        <rect key="frame" x="15" y="58" width="247.5" height="14"/>
+                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBoldObl" family="Hurme Geometric Sans 3" pointSize="14"/>
+                        <color key="textColor" name="GrisClaro"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aCS-hN-l5X" firstAttribute="top" secondItem="goR-wc-SF5" secondAttribute="bottom" constant="1" id="4G8-mJ-Thr"/>
+                    <constraint firstAttribute="bottom" secondItem="aCS-hN-l5X" secondAttribute="bottom" constant="16" id="Hxc-gF-RTc"/>
+                    <constraint firstItem="S9w-QJ-cHz" firstAttribute="top" secondItem="FY7-um-kXh" secondAttribute="top" constant="18" id="Q1h-SD-4IT"/>
+                    <constraint firstItem="goR-wc-SF5" firstAttribute="top" secondItem="S9w-QJ-cHz" secondAttribute="bottom" id="dG4-KZ-xHY"/>
+                    <constraint firstItem="goR-wc-SF5" firstAttribute="leading" secondItem="S9w-QJ-cHz" secondAttribute="leading" id="grg-gH-kGl"/>
+                    <constraint firstItem="S9w-QJ-cHz" firstAttribute="leading" secondItem="FY7-um-kXh" secondAttribute="leading" constant="15" id="mDg-b7-573"/>
+                    <constraint firstItem="aCS-hN-l5X" firstAttribute="leading" secondItem="goR-wc-SF5" secondAttribute="leading" id="tDl-tT-Jk9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="OrigenDestino" destination="S9w-QJ-cHz" id="Ji8-67-ioV"/>
+                <outlet property="StatusFecha" destination="aCS-hN-l5X" id="hME-pV-ooe"/>
+                <outlet property="TipoDeCarga" destination="goR-wc-SF5" id="3ps-vN-EgQ"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GrisClaro">
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
